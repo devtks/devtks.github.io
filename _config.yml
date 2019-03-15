@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: My website
+title: TKS Dev Blog
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Contribution from the TKS Dev Team
 
 # --- Navigation bar options --- #
 
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "https://static1.squarespace.com/static/589202d73a04117a61eff2a5/t/5bacccbe652dea0a1b618be9/1551283313832/?format=1500w"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
