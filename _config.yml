@@ -24,11 +24,7 @@ description: Contribution from the TKS Dev Team
 # List of links in the navigation bar
 navbar-links:
   About Me: 'aboutme'
-  Resources:
-    - Beautiful Jekyll: 'http://deanattali.com/beautiful-jekyll/'
-    - Learn markdown: 'http://www.markdowntutorial.com/'
-    - GitHub Pages: 'https://pages.github.com/'
-  Author's home: 'http://deanattali.com'
+  TKS's home: 'https://www.tks.ca/'
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -73,9 +69,9 @@ author:
 social-network-links:
   rss: true
   email: 'dev@tks.ca'
-  github: https://github.com/devtks
-  twitter: daattali
-  linkedin: daattali
+  github: devtks
+  twitter: TKS_Canada
+  linkedin: tech-knowledge-solutions-inc
 #  reddit: yourname
 #  google-plus: +DeanAttali
 #  xing: yourname
