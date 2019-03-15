@@ -23,7 +23,6 @@ description: Contribution from the TKS Dev Team
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: 'aboutme'
   TKS's home: 'https://www.tks.ca/'
 
 # Image to show in the navigation bar - image must be a square (width = height)
