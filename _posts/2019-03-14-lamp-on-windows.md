@@ -68,7 +68,7 @@ vagrant up
 - You have now a full LAMP/LEMP stack running on your machine
 - Navigate to your folder and you will see different docs and config files (all your project files goes into public you will work into that)
 
-![code-location](C:\Users\yanni\Documents\Projets\Perso\devtks.github.io\img\tuto-lamp\code-location.png)
+![code-location](/img/tuto-lamp/code-location.png)
 
 ## Connection to MySQL
 
@@ -76,13 +76,13 @@ vagrant up
 
 - Open HeidiSQl (indicate your putty path for ssh)
 
-![heidiSql](C:\Users\yanni\Documents\Projets\Perso\devtks.github.io\img\tuto-lamp\heidiSql.png)
+![heidiSql](/img/tuto-lamp/heidiSql.png)
 
-- ![db-info](C:\Users\yanni\Documents\Projets\Perso\devtks.github.io\img\tuto-lamp\db-info.png)
+- ![db-info](../img/tuto-lamp/db-info.png)
 
 Then you can create db and do whatever you want
 
-![dbs-list](C:\Users\yanni\Documents\Projets\Perso\devtks.github.io\img\tuto-lamp\dbs-list.png)
+![dbs-list](../img/tuto-lamp/dbs-list.png)
 
 Usefull links:
 https://box.scotch.io/docs/ (box the tuto was based from)
