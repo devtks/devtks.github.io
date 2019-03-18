@@ -1,13 +1,14 @@
 ---
 layout: post
-title: PHP Dev Environment LAMP stack (Linux, Apache, MySql, PHP) setup tuto
+title: PHP Dev Environment LAMP stack (Linux, Apache, MySql, PHP) on Windows Tuto
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
 tags: [tuto]
-comments: true
 ---
 
-Why we don't like XAMPP
+When working on Windows it might be challenging to find or setup a good dev environment or project that requires stack like LAMP. This tutorial will show you how to quickly setup a full virtual machine containing all you need for your lamp stack.
+
+Why not XAMPP?
 
 - Shipped with its unchangeable php version
 - Hard to work on multiple project requiring different php version
