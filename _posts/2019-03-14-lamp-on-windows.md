@@ -37,7 +37,7 @@ For example on my machine right now i have two boxes (LAMP env)
 
 This tuto is using scotch/box because it appears to be the most downloaded and easy one to setup
 
-![img][/img/tuto-lamp/scotch-box.png]
+![img](/img/tuto-lamp/scotch-box.png)
 
 ## Steps:
 
@@ -51,7 +51,7 @@ git clone https://github.com/scotch-io/scotch-box my-project
 
 - Navigate into your new folder
 
-![cd-into-folder](C:\Users\yanni\Documents\Projets\Perso\devtks.github.io\img\tuto-lamp\cd-into-folder.png)
+![img](/img/tuto-lamp/cd-into-folder.png)
 
 ```
 vagrant up
@@ -61,7 +61,7 @@ vagrant up
 
 - To have any realtime feedback you can open your virtual box and you should see your machine being added and running
 
-- ![real-time](C:\Users\yanni\Documents\Projets\Perso\devtks.github.io\img\tuto-lamp\real-time.png)
+- ![real-time](/img/tuto-lamp/real-time.png)
 
 * If everything works you should be able to navigate to http://192.168.33.10
 
