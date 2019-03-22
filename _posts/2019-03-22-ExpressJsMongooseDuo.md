@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ExpressJS and Mongoose The Perfect Duo
+title: Why ExpressJS and Mongoose is The Perfect Duo
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
 tags: [article, expressjs, mongodb, design, javascript, nodejs]
@@ -22,13 +22,9 @@ We decided to separate our files by features. This means that for example if we 
   - router.js
 
 - feature2
-
   - feature2.controller.js
-
   - feature2.model.js
-
   - feature2.service.js
-
   - router.js
 
     
@@ -158,3 +154,5 @@ B --> |Return JSON|A
 ### Conclusion
 
 To finish off, we can see the power of these technologies combined. We can clearly define our models with Mongoose using JSON and keep everything decoupled and tight, our services will have the job to create and use those models to add, delete or access that data and our controller will have the responsibility to call those services. Other than that, and minor configurations when creating your API, all you need to do is specify the route in your router to access that controller function. So if you are looking for a good and efficient way to have JavaScript running on your server with clean and understandable code, this is definitely one of the best way to go!
+
+link to code: [[NodeJS](https://github.com/devtks/expressjs-api-split-byfeature)]([https://nodejs.org/en/](https://github.com/devtks/expressjs-api-split-byfeature))
