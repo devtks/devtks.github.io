@@ -121,7 +121,7 @@ module.exports = mongoose.model('Blog', BlogPostSchema)
 
 To resume the flow of the application, we can summarize the behavior by this basic diagram:
 
-![flow](/img/express-js-and-mongodb/flow.png)
+![flow](/img/express-js-and-mongodb/flow.PNG)
 
 ### Conclusion
 
