@@ -15,7 +15,6 @@ So how easy could it possibly be to add a new functionality? First off, if we wa
 We decided to separate our files by features. This means that for example if we have some user related functionalities we want to implement, we will have a **_users_** folder with its _controller_, _model_, _service_ and _router_. This means anything related to users will be in the same place instead of being separated by the traditional way of joining files by logical components.
 
 - feature1
-
   - feature1.controller.js
   - feature1.model.js
   - feature1.service.js
@@ -60,6 +59,7 @@ router.post('/addBlogpost', require('./blog-post.controller').postBlogPost)
 module.exports = router
 ```
 
+
 #### blog-posts.controller.js
 
 So, in our router we said that we want to call a certain function that is declared in this controller. From here we will access the received data from the post, in our case we want to get the <u>user</u> and the <u>content</u> from de request body received from the client. Now that we have access to the data, we can call our function from the service. This is what our controller could look like with this one functionality:
@@ -78,6 +78,7 @@ const BlogPostSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('Blog', BlogPostSchema)
 ```
+
 
 #### blog-posts.service.js
 
@@ -99,6 +100,7 @@ module.exports = {
   createBlogPost
 }
 ```
+
 
 #### blog-posts.model.js
 
