@@ -59,7 +59,7 @@ router.post('/addBlogpost', require('./blog-post.controller').postBlogPost)
 module.exports = router
 ```
 
-<br>
+<br/><br/>
 
 #### blog-posts.controller.js
 
@@ -80,7 +80,7 @@ const BlogPostSchema = new mongoose.Schema({
 module.exports = mongoose.model('Blog', BlogPostSchema)
 ```
 
-<br>
+<br/><br/>
 
 #### blog-posts.service.js
 
@@ -103,7 +103,7 @@ module.exports = {
 }
 ```
 
-<br>
+<br/><br/>
 
 #### blog-posts.model.js
 
