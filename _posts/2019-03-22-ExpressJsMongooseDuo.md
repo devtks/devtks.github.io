@@ -136,18 +136,7 @@ module.exports = mongoose.model('Blog', BlogPostSchema)
 
 To resume the flow of the application, we can summarize the behavior by this basic diagram: 
 
-```mermaid
-graph TD
-A[Client] -->|Call to the API| B[Router]
-B --> C[Controller]
-C -->D[Service]
-D -->|Mongoose schema created|E[Access DataBase]
-E --> D
-D --> C
-C --> B
-B --> |Return JSON|A
-
-```
+![flow](/img/express-js-and-mongodb/flow.png)
 
 
 
