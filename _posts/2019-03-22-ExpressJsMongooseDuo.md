@@ -3,7 +3,7 @@ layout: post
 title: ExpressJS and Mongoose The Perfect Duo
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
-tags: [tuto]
+tags: [article, expressjs, mongodb, design, javascript, nodejs]
 ---
 
 Imagine having a full working API using only JavaScript for your back end, not using any SQL and having all your data stored in JSON files. Those are the possibilities when you combine [NodeJS](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/). Using a framework like [ExpressJS](https://expressjs.com/) and an Object Data Modeling library like [Mongoose](https://mongoosejs.com/), we will see that we can do awesome things with simple and clean code. This article will not show the pros and cons of Nodejs or MongoDB but instead look at the advantages of working with the two together.
