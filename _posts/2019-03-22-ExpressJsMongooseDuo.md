@@ -74,18 +74,18 @@ module.exports = router
 So, in our router we said that we want to call a certain function that is declared in this controller. From here we will access the received data from the post, in our case we want to get the <u>user</u> and the <u>content</u> from de request body received from the client. Now that we have access to the data, we can call our function from the service. This is what our controller could look like with this one functionality:
 
 ```javascript
-const mongoose = require('mongoose')
+const { createBlogPost } = require('./blog-post.service');
 
-const BlogPostSchema = new mongoose.Schema({
-  user: String,
-  content: {
-    title: String,
-    post: String,
-    date_added: Date
+const postBlogPost = async (req, res, next) => {
+  const { user, content } = req.body
+  try {
+    await createBlogPost(user, content)
+    res.sendStatus(201)
+    next()
+  } catch (e) {
+    res.sendStatus(500) && next(e)
   }
-})
-
-module.exports = mongoose.model('Blog', BlogPostSchema)
+}
 ```
 
 <br/>
