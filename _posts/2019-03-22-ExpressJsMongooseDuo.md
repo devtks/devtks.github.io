@@ -8,6 +8,8 @@ tags: [article, expressjs, mongodb, design, javascript, nodejs]
 
 Imagine having a full working API using only JavaScript for your back end, not using any SQL and having all your data stored in JSON files. Those are the possibilities when you combine [NodeJS](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/). Using a framework like [ExpressJS](https://expressjs.com/) and an Object Data Modeling library like [Mongoose](https://mongoosejs.com/), we will see that we can do awesome things with simple and clean code. This article will not show the pros and cons of Nodejs or MongoDB but instead look at the advantages of working with the two together.
 
+<br/>
+
 ### Folder structure
 
 So how easy could it possibly be to add a new functionality? First off, if we want to keep the code clean, we will have to divide our files properly. You can either go with a more classic approach and put all your controllers in a folder, all your models in another and all of your services in a separate one, but as you will see we took a different path for this.
@@ -15,7 +17,6 @@ So how easy could it possibly be to add a new functionality? First off, if we wa
 We decided to separate our files by features. This means that for example if we have some user related functionalities we want to implement, we will have a **_users_** folder with its _controller_, _model_, _service_ and _router_. This means anything related to users will be in the same place instead of being separated by the traditional way of joining files by logical components.
 
 - feature1
-
   - feature1.controller.js
   - feature1.model.js
   - feature1.service.js
@@ -26,6 +27,8 @@ We decided to separate our files by features. This means that for example if we 
   - feature2.model.js
   - feature2.service.js
   - router.js
+
+<br/>
 
 ### Main entry point of the API
 
@@ -44,9 +47,13 @@ require('./secure_routes')
 In our case we made the decision that all non-secured routers will simply be named **open-router.js**. In a scenario like a login where the call actually returns you the token, we can’t
 have token authentication before the login information is passed, that is the reason why we can’t say that all routes will be secured.
 
+<br/>
+
 ### Basic API call
 
 Let’s see how simple it can be to now to call this API. In this example we will see how for example we could add blogposts to our MongoDB database. We are going to have in our case a _blog-posts_ folder that will contain all our files related to this feature. We will go through the four files one by one and explain how it works.
+
+<br/>
 
 #### router.js
 
@@ -60,24 +67,32 @@ router.post('/addBlogpost', require('./blog-post.controller').postBlogPost)
 module.exports = router
 ```
 
+<br/>
+
 #### blog-posts.controller.js
 
 So, in our router we said that we want to call a certain function that is declared in this controller. From here we will access the received data from the post, in our case we want to get the <u>user</u> and the <u>content</u> from de request body received from the client. Now that we have access to the data, we can call our function from the service. This is what our controller could look like with this one functionality:
 
 ```javascript
-const mongoose = require('mongoose')
+const { createBlogPost } = require('./blog-post.service');
 
-const BlogPostSchema = new mongoose.Schema({
-  user: String,
-  content: {
-    title: String,
-    post: String,
-    date_added: Date
+const postBlogPost = async (req, res, next) => {
+  const { user, content } = req.body
+  try {
+    await createBlogPost(user, content)
+    res.sendStatus(201)
+    next()
+  } catch (e) {
+    res.sendStatus(500) && next(e)
   }
-})
+}
 
-module.exports = mongoose.model('Blog', BlogPostSchema)
+module.exports = {
+  postBlogPost
+}
 ```
+
+<br/>
 
 #### blog-posts.service.js
 
@@ -100,6 +115,8 @@ module.exports = {
 }
 ```
 
+<br/>
+
 #### blog-posts.model.js
 
 Finally, this is where we will define what is the data we want to store in the database and put it in a mongoose schema. This is the JSON that will be generated in our collection. When we then export the module, we will tell mongoose that this model will be named _Blog_ and will
@@ -121,18 +138,7 @@ module.exports = mongoose.model('Blog', BlogPostSchema)
 
 To resume the flow of the application, we can summarize the behavior by this basic diagram:
 
-```mermaid
-graph TD
-A[Client] -->|Call to the API| B[Router]
-B --> C[Controller]
-C -->D[Service]
-D -->|Mongoose schema created|E[Access DataBase]
-E --> D
-D --> C
-C --> B
-B --> |Return JSON|A
-
-```
+![flow](/img/express-js-and-mongodb/flow.PNG)
 
 ### Conclusion
 
