@@ -97,7 +97,7 @@ url-pretty: 'https://devtks.github.io/' # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: "UA-136876369-1"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
