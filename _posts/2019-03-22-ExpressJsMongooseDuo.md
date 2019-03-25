@@ -86,6 +86,10 @@ const postBlogPost = async (req, res, next) => {
     res.sendStatus(500) && next(e)
   }
 }
+
+module.exports = {
+  postBlogPost
+}
 ```
 
 <br/>
