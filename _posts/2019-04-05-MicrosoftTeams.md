@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Microsoft Teams for business collaboration
+title: Microsoft Teams for Business Collaboration
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
 tags: [Microsoft, Teams, collaboration, business, communication]
@@ -15,27 +15,28 @@ Today we will share with you what we think our the best features of Microsoft Te
 
 First we have to show you the overall design of the application. The Microsoft Teams platform places content and conversations side by side. This area hosts activities, chat, teams, meetings, files and apps.
 
-![design](/img/microsoft-teams/design.PNG)
+![design](/img/microsoft-teams/design.png)
 
 The main navigation bar is located on the left side of the screen. The layout is as follows:
 
-![nav](/img/microsoft-teams/nav.PNG)
+![nav](/img/microsoft-teams/nav.png)
 
 <br/>
 
 ### Microsoft Teams Versions
 
+
  * Desktop client
 
- ![desktop](/img/microsoft-teams/desktop.PNG)
+ ![desktop](/img/microsoft-teams/desktop.png)
 
  * Website
 
- ![web](/img/microsoft-teams/web.PNG)
+ ![web](/img/microsoft-teams/web.png)
 
  * Mobile
 
- ![mobile](/img/microsoft-teams/mobile.PNG)
+ ![mobile](/img/microsoft-teams/mobile.png)
 
 <br/>
 
@@ -43,21 +44,22 @@ The main navigation bar is located on the left side of the screen. The layout is
 
 A **Team** is a collection of people, tools, and content surrounding different projects and outcomes. A **Team** is located in the **Teams** tab of the main navigation bar. A **Team** is represented by a team name, a related icon, and a description.
 
-![Team](/img/microsoft-teams/Team.PNG)
+![Team](/img/microsoft-teams/Team.png)
 
 
 **Channels** are sections within a **Team** to further organize a team by specific projects and topics.
 
-![channel](/img/microsoft-teams/channel.PNG)
+![channel](/img/microsoft-teams/channel.png)
 
 **Channels** contain relative conversations, files, wikis, and other tools to be utilized by the **Team**. Information is organized by tabs within the content pane of a **Channel**.
 A **Channel’s** main tabs are the Conversations, *Files*, *Notes*, and *Wiki* tabs.
 
-![channeltabs](/img/microsoft-teams/channeltabs.PNG)
+![channeltabs](/img/microsoft-teams/channeltabs.png)
 
 <br/>
 
 ### Communication Features
+
 
 #### Email
 
@@ -65,10 +67,12 @@ Microsoft Teams offers the ability to send emails to a **Channel** conversation 
 
 1. Click the **Teams** tab, click a **Team** from the list and then click a **Channel**.
 2. Click the ellipses on the right side of the **Channel** selection.
-![email](/img/microsoft-teams/email.PNG)
+
+    ![email](/img/microsoft-teams/email.png)
 3. Click **Get Email Address**.
 4. Click copy to copy the email address.
 5. Use any email to directly send messages to the **Channel** conversation section.
+
 
 #### Notifications
 
@@ -79,17 +83,21 @@ The **Activity** tab contains all your notifications.
 2. **Feed** shows you a summary of everything that’s happened in the channels you follow. 
 3. Click the **Filter** icon to display certain types of notifications.
 
+
+
 #### Favorite a Team
 
 If you would like to see a **Team** in your team’s list view, you must favorite that **Team**. When a project is finished for a **Team**, you can unfavorite that **Team** to remove it from your team’s list view. 
 
 1. Click the **Teams** tab, then click a **Team** from the list.
 2. Click the ellipses on the right side of the **Team** selection.
-![favoriteTeam](/img/microsoft-teams/favoriteTeam.PNG)
+
+    ![favoriteTeam](/img/microsoft-teams/favoriteTeam.png)
 3. Click the star to Favorite the **Team**.
 4. A solid star signifies that a **Team** is in your favorites.
 5. To remove a **Team** from your favorites, click the star again.
 6. An outlined star signifies a **Team** is not in your favorites.
+
 
 
 #### Favorite a Channel
@@ -107,17 +115,22 @@ If you favorite a **Channel** it stays visible in your team’s list view.
 5. To remove a **Channel** from your favorites, click the star again.
 6. An outlined star signifies a **Channel** is not in your favorites.
 
+
+
 #### Follow a Channel
 
 *Note: To receive noticiations and updates from a project, you must follow the corresponding Channel.*
 
 Following a **Channel** is subscribing to get notifications for any and all activity in that **Channel**. You can only follow a **Channel**, you cannot follow a **Team**. If you are not directly working on a project, it is recommended you do not follow that **Channel**. When a project is finished for a **Channel**, it is recommended you unfollow that **Channel** to unsubscribe from all notifications.
 
-1. Go to the **Channel** name and click **More Options**.
-![moreOptions](/img/microsoft-teams/moreOptions.PNG)
+1. Go to the **Channel** name and click **More Options**.    
+    ![moreOptions](/img/microsoft-teams/moreOptions.png)
+
 2. Click **Follow this channel**.
 3. To unfollow a **Channel**, go to the **Channel** name and click **More Options**.
 4. Click **Unfollow this channel**.
+
+
 
 #### Chat and Share Files
 
@@ -126,18 +139,21 @@ Anytime you start a conversation you should always @mention the person or group 
 **Display Team Conversations**
 1. Click the **Teams** tab, then pick a **Team** and a **Channel**.
 2. Click **Conversations** on the tabs within the content pane.
-![conversations](/img/microsoft-teams/conversations.PNG)
+
+    ![conversations](/img/microsoft-teams/conversations.png)
 
 **Start a Conversation with the Whole Team**
 1. Click the **Teams** tab, then pick a **Team** and a **Channel**.
 2. In the compose box, write @Team and what’s on your mind.
-![teamConversation](/img/microsoft-teams/teamConversation.PNG)
+
+    ![teamConversation](/img/microsoft-teams/teamConversation.png)
 3. Click **Send**. 
 
 **Start a Conversation with a Team Member**
 Conversations are private when you select **New Chat** and @mention a person.
 1. At the top of the app click **New Chat**.
-![newChat](/img/microsoft-teams/newChat.PNG)
+
+    ![newChat](/img/microsoft-teams/newChat.png)
 2. In the **To** field, type the name of the person or the people you would like to chat with.
 3. In the compose box, write what’s on your mind and click **Send**.
 
@@ -163,7 +179,8 @@ Each channel has its own file library where files can be shared, so your project
 2. Click the **Team** that contains your **Channel**.
 3. Click the **Channel**.
 4. Click **Files** on the tabs within the content pane.
-![files](/img/microsoft-teams/files.PNG)
+
+    ![files](/img/microsoft-teams/files.png)
 
 Files stored in the **Channel** files library are accessible to every member of the **Team**. 
 You and your **Team** can co-edit files in Office Online, Office for Android or IOS, or the latest versions of Office 2016.
@@ -178,7 +195,8 @@ The **Wiki** is our personal favorite. Every **Channel** in Microsoft Teams has 
 2. Click the **Team** that contains your **Channel**.
 3. Click the **Channel**.
 4. Click **Wiki** on the tabs within the content pane.
-![wiki](/img/microsoft-teams/wiki.PNG)
+
+    ![wiki](/img/microsoft-teams/wiki.png)
 
 Files stored in the **Channel** files library are accessible to every member of the **Team**. 
 You and your **Team** can co-edit files in Office Online, Office for Android or IOS, or the latest versions of Office 2016.
