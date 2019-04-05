@@ -7,13 +7,13 @@ gh-badge: [star, fork, follow]
 tags: [Microsoft, Teams, collaboration, business, communication]
 ---
 
-Today we will share with you what we think our the best features of Microsoft Teams. Microsoft Teams is an application especially designed for collaborative teamwork in an environment where project information can be centralized. Microsoft Teams is a workspace where every user has easy access to project files, conversations, and meetings. The application offers integration for apps to share content from your favorite services.
+Today we will share with you what we think are the best features of Microsoft Teams. Microsoft Teams is an application specially designed for collaborative teamwork in an environment where project information can be centralized. Microsoft Teams is a workspace where every user has easy access to project files, conversations, and meetings. The application offers integration for apps to share content from your favorite services.
 
 <br/>
 
 ### Microsoft Teams Design
 
-First we have to show you the overall design of the application. The Microsoft Teams platform places content and conversations side by side. This area hosts activities, chat, teams, meetings, files and apps.
+First, we have to show you the overall design of the application. The Microsoft Teams platform places content and conversations side by side. This area hosts activities, chat, teams, meetings, files, and apps.
 
 ![design](/img/microsoft-teams/design.png)
 
@@ -111,7 +111,7 @@ If you favorite a **Channel** it stays visible in your team’s list view.
 <br/>
 #### Follow a Channel
 
-*Note: To receive noticiations and updates from a project, you must follow the corresponding Channel.*
+*Note: To receive notifications and updates from a project, you must follow the corresponding Channel.*
 
 Following a **Channel** is subscribing to get notifications for any and all activity in that **Channel**. You can only follow a **Channel**, you cannot follow a **Team**. If you are not directly working on a project, it is recommended you do not follow that **Channel**. When a project is finished for a **Channel**, it is recommended you unfollow that **Channel** to unsubscribe from all notifications.
 
