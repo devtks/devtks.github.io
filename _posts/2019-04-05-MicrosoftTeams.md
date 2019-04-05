@@ -59,8 +59,7 @@ A **Channel’s** main tabs are the Conversations, *Files*, *Notes*, and *Wiki* 
 <br/>
 
 ### Communication Features
-
-
+<br/>
 #### Email
 
 Microsoft Teams offers the ability to send emails to a **Channel** conversation tab. This is great for production support emails or general email sharing with the **Team**. 
@@ -72,8 +71,7 @@ Microsoft Teams offers the ability to send emails to a **Channel** conversation 
 3. Click **Get Email Address**.
 4. Click copy to copy the email address.
 5. Use any email to directly send messages to the **Channel** conversation section.
-
-
+<br/>
 #### Notifications
 
 Notifications let you know when someone @mentions you, likes something you posted, or replies to a thread you started.
@@ -82,9 +80,7 @@ The **Activity** tab contains all your notifications.
 1. Click **Activity**.  
 2. **Feed** shows you a summary of everything that’s happened in the channels you follow. 
 3. Click the **Filter** icon to display certain types of notifications.
-
-
-
+<br/>
 #### Favorite a Team
 
 If you would like to see a **Team** in your team’s list view, you must favorite that **Team**. When a project is finished for a **Team**, you can unfavorite that **Team** to remove it from your team’s list view. 
@@ -97,9 +93,7 @@ If you would like to see a **Team** in your team’s list view, you must favorit
 4. A solid star signifies that a **Team** is in your favorites.
 5. To remove a **Team** from your favorites, click the star again.
 6. An outlined star signifies a **Team** is not in your favorites.
-
-
-
+<br/>
 #### Favorite a Channel
 
 If you favorite a **Channel** it stays visible in your team’s list view. 
@@ -114,9 +108,7 @@ If you favorite a **Channel** it stays visible in your team’s list view.
 4. A solid star signifies that a **Channel** is in your favorites.
 5. To remove a **Channel** from your favorites, click the star again.
 6. An outlined star signifies a **Channel** is not in your favorites.
-
-
-
+<br/>
 #### Follow a Channel
 
 *Note: To receive noticiations and updates from a project, you must follow the corresponding Channel.*
@@ -129,9 +121,7 @@ Following a **Channel** is subscribing to get notifications for any and all acti
 2. Click **Follow this channel**.
 3. To unfollow a **Channel**, go to the **Channel** name and click **More Options**.
 4. Click **Unfollow this channel**.
-
-
-
+<br/>
 #### Chat and Share Files
 
 Anytime you start a conversation you should always @mention the person or group of people you are talking to.
