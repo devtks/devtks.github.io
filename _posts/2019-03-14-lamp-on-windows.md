@@ -11,8 +11,8 @@ When working on Windows it might be challenging to find or setup a good dev envi
 Why not XAMPP?
 
 - Shipped with its unchangeable php version
-- Hard to work on multiple project requiring different php version
-- Every devs dont share the same dev env
+- Hard to work on multiple projects requiring different php version
+- Every devs don't share the same dev env
 - Cant be share/distribute between devs
 - xdebug act very weird on xampp sometime
 
@@ -20,7 +20,7 @@ Why not XAMPP?
 
 You need multiple tools on your machine
 
-- VirtualBox( prefered) but can work with VMware too (https://www.virtualbox.org/)
+- VirtualBox( preferred) but can work with VMware too (https://www.virtualbox.org/)
 - Vagrant (which is a wrapper to virtual box/vmware) https://www.vagrantup.com/
 - HeidiSQL\* (free mysql client not as heavy as workbench) https://www.heidisql.com/download.php
 - Git\* (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -30,7 +30,7 @@ You need multiple tools on your machine
 **What it will give you?**
 Ability to download and launch on the fly different machines containing all the environment you need pre-setup
 
-For example on my machine right now i have two boxes (LAMP env)
+For example on my machine right now I have two boxes (LAMP env)
 
 ![img](/img/tuto-lamp/my-machines.png)
 
@@ -60,7 +60,7 @@ vagrant up
 
 - This should take a little while (it actually download the box for you and starting it)
 
-- To have any realtime feedback you can open your virtual box and you should see your machine being added and running
+- To have any real-time feedback you can open your virtual box and you should see your machine being added and running
 
 - ![real-time](/img/tuto-lamp/real-time.png)
 
@@ -85,7 +85,7 @@ Then you can create db and do whatever you want
 
 ![dbs-list](../img/tuto-lamp/dbs-list.png)
 
-Usefull links:
+Useful links:
 https://box.scotch.io/docs/ (box the tuto was based from)
 https://app.vagrantup.com/boxes/search (all the possible boxes available to us)
 https://www.vagrantup.com/docs/cli/ (vagrant command)
