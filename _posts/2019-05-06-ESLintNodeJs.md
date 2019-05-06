@@ -5,7 +5,7 @@ title: Using ESLint to detect errors in NodeJS applications
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
 tags: [NodeJS, ESLint, tuto, vscode, code]
-bigimg: /img/banner.jpeg
+bigimg: /img/eslint-nodejs/banner.jpeg
 ---
 
 Let's say that you are working in a NodeJS application and you change a file name and forget to update the require/import paths. Since JavaScript has no way of knowing that these paths are wrong, you might find out about the error only after you run the application.
