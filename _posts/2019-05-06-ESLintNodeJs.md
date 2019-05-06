@@ -163,5 +163,4 @@ If you click on the problems tab or open `app.js` you now notice error pointing 
 
 ## Conclusion
 
-Hopefully, this will help you with your future NodeJS/JavaScript application has we got caught with that issue in the past.
-Eslint can be very nice to enforce coding style across the team as one of the JavaScript weakness is the fact that it is very (sometimes too) flexible when it comes to style and syntax.
+Hopefully, this will help you with your future NodeJS/JavaScript applications, as we got caught with these same issues in the past. Eslint can be very nice to enforce coding style across the team. One of the weaknesses of JavaScript is the fact that it is very flexible (and sometimes too flexible) when it comes to style and syntax.
