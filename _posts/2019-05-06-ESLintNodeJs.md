@@ -8,7 +8,9 @@ tags: [NodeJS, ESLint, tuto, vscode, code]
 bigimg: /img/eslint-nodejs/banner.jpeg
 ---
 
+Sometimes working in NodeJs/JavaScript application can reserve some surprises when it comes to helping the developers to error out some common issues about their application structure and relation between their different project files.
 Let's say that you are working in a NodeJS application and you change a file name and forget to update the require/import paths. Since JavaScript has no way of knowing that these paths are wrong, you might find out about the error only after you run the application.
+Here is a tutorial we propose on how to install and use ESLint within Visual Studio Code to remedy this issue.
 
 ## Context
 
@@ -155,7 +157,7 @@ The file should look something like this:
 Now you will directly notice an error inside VS Code
 ![1557145244976](/img/eslint-nodejs/1557145244976.png)
 
-If you click on the problems tab or open `app.js` you now notice error pointing out that a `require` is pointing to a wrong file.
+If you click on the problems tab or open `app.js` you will see the error pointing out that a `require` is pointing to a wrong file.
 
 ![1557145320164](/img/eslint-nodejs/1557145320164.png)
 
@@ -163,4 +165,4 @@ If you click on the problems tab or open `app.js` you now notice error pointing 
 
 ## Conclusion
 
-Hopefully, this will help you with your future NodeJS/JavaScript applications, as we got caught with these same issues in the past. Eslint can be very nice to enforce coding style across the team. One of the weaknesses of JavaScript is the fact that it is very flexible (and sometimes too flexible) when it comes to style and syntax.
+Hopefully, this will help you with your future NodeJS/JavaScript applications, as we got caught with these same issues in the past. ESLint can be very nice to enforce coding style across the team. One of the weaknesses of JavaScript is the fact that it is very flexible (and sometimes too flexible) when it comes to style and syntax.
