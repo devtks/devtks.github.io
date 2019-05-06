@@ -78,7 +78,7 @@ or to install it globally (you might also need to install it in the workspace if
 npm install eslint -g
 ```
 
-To create a eslint congig file:
+To create a eslint config file:
 
 ```
 $ ./node_modules/.bin/eslint --init
