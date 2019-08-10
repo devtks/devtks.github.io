@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: [Process] Using Git Flow with GitKraken and Azure Devops
+title: Process - Using Git Flow with GitKraken and Azure Devops
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
 tags: [git, gitkraken, tuto, process, azure-devops]
