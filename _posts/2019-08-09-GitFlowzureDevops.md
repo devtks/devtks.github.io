@@ -7,11 +7,11 @@ gh-badge: [star, fork, follow]
 tags: [git, gitkraken, tuto, process, azure-devops]
 ---
 
-In 2019 we had the chance to start a new project from scratch for a new customer. We decided to experiment a new approach in our workflow by trying to resolve recurring issues from other projects and use the maximum potential of few things. For Example being a Microsoft Gold Partner shop we are mostly using Microsoft Product for collaboration and project management. (MS Teams, Azure DevOps, etc....)
+In 2019 we had the chance to start a new project from scratch for a new customer. We decided to experiment a new approach in our workflow by trying to resolve recurring issues from other projects and use the maximum potential of few things. For Example being a Microsoft Gold Partner shop we are mostly using Microsoft Product for collaboration and project management. (MS Teams, Azure DevOps, etc....).
 
 One of the biggest change was the switch from TFS to Git for our code repository plus the fact that we are using Microsoft Azure Devops.
 
-This article will try to summarize our approach using those tools including the git client GitKraken which implement the GitFlow workflow approach. Each concept can be use separately but for us those tools combined gave us a nice and smooth experience. 
+This article will try to summarize our approach using those tools including the git client GitKraken which implement the GitFlow workflow approach. Each concept can be use separately but for us those tools combined gave us a nice and smooth experience.
 
 Note: GitKakren is normally a free git client desktop but for this tutorial we are using the pro version to be able to connect to Azure Devops
 
@@ -269,7 +269,7 @@ Unless you want to rename anything or have multiple remote you can confirm by cl
 
 ![](/img/gitflow-azuredvops/whatbranch.PNG)
 
-If everything went well you should be able to see the `develop` branch on `remote `and logo from team should be also beside `develop`.
+If everything went well you should be able to see the `develop` branch on `remote`and logo from team should be also beside `develop`.
 
 ![](/img/gitflow-azuredvops/dev-now-remote.PNG)
 
@@ -541,9 +541,8 @@ Once completed you can see how dev once merge before feature being merge itself 
 
 In conclusion we did a retrospective on this project and all the team members agreed by saying this workflow really help the project and all its participant. All dev have different level of experiences and different preferences but everyone agreed this was the way to go to work together.
 
-**GitKraken** really simplify everything when it comes to  deal with all the Git concepts without using a console any single time. This is definitely a tool we want to keep in our work and it will be hard to go back on other code source repository like TFS or SVN.
+**GitKraken** really simplify everything when it comes to deal with all the Git concepts without using a console any single time. This is definitely a tool we want to keep in our work and it will be hard to go back on other code source repository like TFS or SVN.
 
 Having **Git Flow** and Pull Request policies in place was a bit challenging at first but at the end we were always able to provide nice and smooth feedback on each other code which ended with much more consistent and solid code without enforcing strict coding style policy.
 
-**Azure Devops** is a must have for us now.  Everything is very user friendly and the amount of things we can do with this tool is amazing.  One of the policy we had for pull request was the application being able to build (.net core api + angular). We didn't had last minute bad surprise we an application not able to build for production and not being able to deploy.
-
+**Azure Devops** is a must have for us now. Everything is very user friendly and the amount of things we can do with this tool is amazing. One of the policy we had for pull request was the application being able to build (.net core api + angular). We didn't had last minute bad surprise we an application not able to build for production and not being able to deploy.
