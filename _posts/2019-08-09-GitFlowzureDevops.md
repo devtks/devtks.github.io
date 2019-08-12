@@ -7,16 +7,16 @@ gh-badge: [star, fork, follow]
 tags: [git, gitkraken, tuto, process, azure-devops]
 ---
 
-In 2019 we had the chance to start a new project from scratch for a new customer. We decided to experiment a new approach in our workflow by trying to resolve recurring issues from other projects and use the maximum potential of few things. For Example being a Microsoft Gold Partner shop we are mostly using Microsoft Product for collaboration and project management. (MS Teams, Azure DevOps, etc....).
+In 2019 we had the chance to start a new project from scratch for a new customer. We decided to experiment with a new approach in our workflow by trying to resolve recurring issues from other projects and use the maximum potential of a few things. For Example, being a Microsoft Gold Partner shop we are mostly using Microsoft Product for collaboration and project management. (MS Teams, Azure DevOps, etc....).
 
-One of the biggest change was the switch from TFS to Git for our code repository plus the fact that we are using Microsoft Azure Devops.
+One of the biggest changes was the switch from TFS to Git for our code repository plus the fact that we are using Microsoft Azure Devops.
 
-This article will try to summarize our approach using those tools including the git client GitKraken which implement the GitFlow workflow approach. Each concept can be use separately but for us those tools combined gave us a nice and smooth experience.
+This article will try to summarize our approach using those tools including the git client GitKraken which implements the GitFlow workflow approach. Each concept can be used separately but for us, those tools combined gave us a nice and smooth experience.
 
-Note: GitKakren is normally a free git client desktop but for this tutorial we are using the pro version to be able to connect to Azure Devops
+Note: GitKakren is normally a free git client desktop but for this tutorial, we are using the pro version to be able to connect to Azure Devops
 
 - [Challenges and problems we tried to resolve](#challenges-and-problems-we-tried-to-resolve)
-  - [Team work](#team-work)
+  - [Teamwork](#teamwork)
     - [Git Flow to the rescue](#git-flow-to-the-rescue)
   - [Code Review](#code-review)
     - [Pull Request & Azure DevOps to the rescue](#pull-request--azure-devops-to-the-rescue)
@@ -32,7 +32,7 @@ Note: GitKakren is normally a free git client desktop but for this tutorial we a
       - [Release Staging Area](#release-staging-area)
       - [Support For Emergency Fixes](#support-for-emergency-fixes)
 - [Environment Setup](#environment-setup)
-  - [Create new project](#create-new-project)
+  - [Create a new project](#create-a-new-project)
   - [Connect GitKraken to Azure Devops](#connect-gitkraken-to-azure-devops)
   - [Clone your Git Repo from GitKraken](#clone-your-git-repo-from-gitkraken)
   - [Initialize Git Flow branches from GitKraken.](#initialize-git-flow-branches-from-gitkraken)
@@ -54,33 +54,33 @@ Note: GitKakren is normally a free git client desktop but for this tutorial we a
 
 # Challenges and problems we tried to resolve
 
-This is a short resume of what we tried to achieve and why we think those tools combined together helped us a lot on many areas: collaboration, git concept learning curve, code quality, code consistency, and code stability.
+This is a short resume of what we tried to achieve and why we think those tools combined helped us a lot in many areas: collaboration, git concept learning curve, code quality, code consistency, and code stability.
 
-## Team work
+## Teamwork
 
-Having multiple developers working on the same projects isn't always easy especially when you try to not step on the feet of each others. New junior coder (or any coder really) on the team can brake the project branch with one wrong commit and affect all other members. Which sometime ends with stressful and complete chaos for a short (sometime long) period of time on the entire team. Unit test can't be done on dev because feature isn't completed yet. What feature being worked on by who.
+Having multiple developers working on the same projects isn't always easy especially when you try to not step on the feet of each other. A new junior coder (or any coder really) on the team can break the project branch with one wrong commit and affect all other members. Which sometimes ends with stressful and complete chaos for a short (sometimes long) period time on the entire team. Unit test can't be done on dev because the feature isn't completed yet. What features being worked on by who.
 
 ### Git Flow to the rescue
 
-With Git Flow branching strategy and some settings on Dev Ops **no commit can be done** directly on the `develop` branch. Each developer always have to create a feature branch and do their work on the feature they are working on. Once a feature is consider done by the developer he has to create a pull request to merge his feature changes to the `develop` branch. His pull request has to be review and approved by another member of the team (Git Flow is explained bellow)
+With Git Flow branching strategy and some settings on Dev Ops **no commit can be done** directly on the `develop` branch. Each developer always has to create a feature branch and do their work on the feature they are working on. Once a feature is consider done by the developer he has to create a pull request to merge his feature changes to the `develop` branch. His pull request has to be review and approved by another member of the team (Git Flow is explained below)
 
 Pros we see:
 
 - It forces the project to be split into little features
-- Corrupted commit doesn't affect other team members
+- Corrupted commits don't affect other team members
 - Dev can easily relate their feature (pull request ) with bugs, task stories etc
-- Dev branch will received only approved code (more stable, less potential bugs etc)
+- Dev branch will receive only approved code (more stable, less potential bugs etc)
 
 ## Code Review
 
-As a small company who are dealing with sometime small and low budget projects it was always hard to put in place code review. It can be hard to find a tool to review commits correctly or easily provide feedback on the developer's code you are reviewing. Azure devops offer a smart and very user-friendly way to remedy that challenge and it was a huge success using this feature during our last project. (see Pull Request section)
+As a small company that are dealing with sometimes small and low budget projects, it was always hard to put in place code review. It can be hard to find a tool to review commits correctly or easily provide feedback on the developer's code you are reviewing. Azure DevOps offer a smart and very user-friendly way to remedy that challenge and it was a huge success using this feature during our last project. (see Pull Request section)
 
 ### Pull Request & Azure DevOps to the rescue
 
-As mentioned in previous point. Once a feature is considered done the developer has to create a pull request asking his feature to be merge to the `develop` branch. We couple settings on Azure DevOps we can set multiple criterias for a pull request to be approved.
+As mentioned in the previous point. Once a feature is considered done the developer has to create a pull request asking his feature to be merged to the `develop` branch. We couple settings on Azure DevOps we can set multiple criteria for a pull request to be approved.
 
 - Be approved by one or multiple team members
-- Project has to build with no errors
+- The project has to build with no errors
 - Code commentary has to be all resolved
 - ....
 
@@ -154,12 +154,12 @@ GitFlow supports **hotfix branches** - branches made from a tagged release. You 
 
 # Environment Setup
 
-## Create new project
+## Create a new project
 
 ![](/img/gitflow-azuredvops/New-Project.PNG)
 
 First thing let's create a new project on Azure DevOps.
-Of course you have to make sure the version control is set to Git. The other options can be set to your preferences.
+Of course, you have to make sure the version control is set to Git. The other options can be set to your preferences.
 
 ![](/img/gitflow-azuredvops/Create-New-Project.PNG)
 
@@ -169,7 +169,7 @@ Welcome to your newly created project.
 
 ## Connect GitKraken to Azure Devops
 
-First thing is to connect GitKraken to your Azure Devops. For that you are going to need to create a Token
+First thing is to connect GitKraken to your Azure Devops. For that, you are going to need to create a Token
 
 When opening GitKraken you should see Azure Devops option available (_Pro Version_)
 
@@ -180,7 +180,7 @@ When opening GitKraken you should see Azure Devops option available (_Pro Versio
 Enter your devops url and click "Generate a token on Azure DevOps".
 ![](/img/gitflow-azuredvops/enter-url-devops.png)
 
-You will be redirect to your AzureDevOps personal setting and will be invited to create a new Token
+You will be redirected to your AzureDevOps personal setting and will be invited to create a new Token
 
 Give it a name and depending on your preferences you can set a maximum of one year validity.
 
@@ -207,7 +207,7 @@ Now your GitKraken is successfully connected to your Azure DevOps
 
 ## Clone your Git Repo from GitKraken
 
-Now your are connected to your DevOps organization you can clone your newly created project.
+Now you are connected to your DevOps organization you can clone your newly created project.
 
 ![](/img/gitflow-azuredvops/clone-repo.png)
 
@@ -224,7 +224,7 @@ To confirm that you repo was correctly initialize. You can navigate to the Repos
 
 ## Initialize Git Flow branches from GitKraken.
 
-We are now going to initialize the Git Flow branching strategy with the help of GitKraken. It will have the effect to give you a quick way to create new branches (develop,features, releases or hotfixes.)
+We are now going to initialize the Git Flow branching strategy with the help of GitKraken. It will give you a quick way to create new branches (develop, features, releases or hotfixes.)
 
 From GitKraken open the Preferences
 
@@ -240,19 +240,19 @@ You will see now that new menu appeared on your GitKraken main screen but also `
 
 As mentioned earlier Git is a distributed source code repository
 
-For now `develop` is only on your local machine. That's why we can't see it on the remote yet. It needs to be pushed.
+For now, `develop` is only on your local machine. That's why we can't see it on the remote yet. It needs to be pushed.
 
 On GitKraken you can see what is on remote and what is on local by checking little icon. Little computer is where local is and the DevOps team logo is where remote is.
 
-On the screenshot bellow I need to push my local to remote if I want to init the `develop` branch.
+On the screenshot bellow, I need to push my local to remote if I want to init the `develop` branch.
 
 And that's the beauty of Git. You can do as many checking you want locally before sharing it with the rest of the team.
 
 ![](/img/gitflow-azuredvops/local-vs-remote.PNG)
 
-First you need to `checkout` the development for Git to point to this branch.
+First, you need to `checkout` the development for Git to point to this branch.
 
-Normally with command line it would be done by
+Normally with command line, it would be done by
 
 ```
 git checkout develop
@@ -283,7 +283,7 @@ You should see the two branches `master` and `develop`
 
 ![](/img/gitflow-azuredvops/reposbranches.PNG)
 
-First little thing to do (optional) is setting the `develop` branch as the Compare one. Then all the features branch will take the `develop` branch as a comparation reference and show how many commits behind or ahead it is.
+First, little thing to do (optional) is setting the `develop` branch as the Compare one. Then all the features branch will take the `develop` branch as a comparation reference and show how many commits behind or ahead it is.
 
 Click on the 3 dots and then `Set as compare branch`
 
@@ -300,16 +300,16 @@ You can now set the rules as you wish.
 - Build validation (we will do a tutorial on this topic as well)
 - etc
 
-As mention in the disclaimer of that page setting rules will automatilly apply the following.
+As mention in the disclaimer of that page setting rules will automatically apply the following.
 ![](/img/gitflow-azuredvops/protectthisbranch.PNG)
 
-For the purpose of this tutorial I'm going to activate only a reviewer and comment being set to resolved. (_I can approve my own pull request but it is for this tutorial purpose_)
+For the purpose of this tutorial I'm going to activate only a reviewer and comment being set to resolve. (_I can approve my own pull request but it is for this tutorial purpose_)
 
 Here is option example:
 
 ![](/img/gitflow-azuredvops/optionexample.PNG)
 
-**Congratulation!: Your environment is now ready to use and setup correctly.**
+**Congratulations!: Your environment is now ready to use and setup correctly.**
 
 # WorkFlow in Action
 
@@ -321,13 +321,13 @@ Let say you have all your user stories setup with tasks on DevOps
 
 ![](/img/gitflow-azuredvops/project-plan.PNG)
 
-The first feature I'm going to work on is `project setup`. (note here the project is a sample one very small but normal features are a group of one or multiple task and not user storied like this example.)
+The first feature I'm going to work on is `project setup`. (note here the project is a sample one very small but normal features are a group of one or multiple tasks and not user storied like this example.)
 
-Just to confirm my setting were apply I'm trying to commit my initial files to the `develop` branch
+Just to confirm my setting applied. I'm trying to commit my initial files to the `develop` branch
 
 ![](/img/gitflow-azuredvops/trycommittodev.PNG)
 
-I am be able to push against dev locally but when trying to push on remote I have the following message
+I am able to push against dev locally but when trying to push on remote I have the following message
 
 ![](/img/gitflow-azuredvops/can.tpushondev.PNG)
 
@@ -345,20 +345,20 @@ Then type the name of the feature and click start feature
 
 ![](/img/gitflow-azuredvops/projectsetupfeature.png)
 
-Now we can see that we have a local feature folder created with a project-setup branch in it (only locally for now). I can now push my changes on that local `feature` branch.
+Now we can see that we have a local feature folder created with a project-setup branch in it (only locally for now). I can now push my changes to that local `feature` branch.
 
-Notice that Gitkraken has a nice code comparaison tool with different type of view including side by side view.
+Notice that Gitkraken has a nice code comparison tool with different types of view including side by side view.
 
 ![](/img/gitflow-azuredvops/side-by-side-view.PNG)
 
 We can now as many`commit` we want on our local branch.
-When feature is done or when we want to share progression we can push all the changes to remote
+When a feature is done or when we want to share progression we can push all the changes to remote
 
 ## Create Pull Request with GitKraken
 
-Now it is time to ask for the feature to be merge with `develop` branch.
+Now it is time to ask for the feature to be merged with `develop` branch.
 
-Of course pull request can be create on dev ops directly, command line etc.
+Of course, pull request can be created on dev ops directly, command line etc.
 
 Here we are going to create a pull request via GitKraken.
 
@@ -372,7 +372,7 @@ Or Drag and Dropping the `feature` branch to `develop`
 
 ![](/img/gitflow-azuredvops/dragdrop.gif)
 
-We can entered information we want and then create the pull request.
+We can enter the information we want and then create the pull request.
 
 ![](/img/gitflow-azuredvops/pullrequestcreation.PNG)
 
@@ -392,7 +392,7 @@ You can now add work items related to the pull request (they can be automaticall
 
 ### Adding Reviewers
 
-Reviewers can be set and they will receive notification via email automatilly
+Reviewers can be set and they will receive a notification via email automatically
 
 ![](/img/gitflow-azuredvops/reviewers.PNG)
 
@@ -402,7 +402,7 @@ One nice feature is you can set some rules whenever the PR is approved like
 
 - Deleting feature branch automatically
 
-- Set related work items to be resolved, completed,closed ...
+- Set related work items to be resolved, completed, closed ...
 
 - Merge Type
 
@@ -412,7 +412,7 @@ Now Pull Request is fully setup and is waiting to be approved
 
 ## Pull Request Approval and Code Review
 
-As a reviewer you will have all you need to see what was done for that feature.
+As a reviewer, you will have all you need to see what was done for that feature.
 
 Azure devops provide a nice and easy way to review and give feedback on your peers' code.
 
@@ -432,27 +432,27 @@ Specific line
 
 ![](/img/gitflow-azuredvops/commentonline.PNG)
 
-Nice feature is the fact that comments can be rich and including many formatting/tagging/images/Pull Request or items reference and much more.
+A nice feature is the fact that comments can be rich and including many formatting/tagging/images/Pull Request or items reference and much more.
 
 ![](/img/gitflow-azuredvops/comment example.PNG)
 
-Now a comment is post we can see on the PR timeline a policy that it doesn't comply to rules of having `all comments resolved`
+Now a comment is posted we can see on the PR timeline a policy that it doesn't comply to rules of having `all comments resolved`
 
 ![](/img/gitflow-azuredvops/timeline.PNG)
 
-Developer will be notify about the comment and make the required changes or reply to the comment
+The developer will be notified about the comment and make the required changes or reply to the comment
 
 He can push his new changes and reply to the comment by tagging the reviewer for example.
 
-The new commit will appears in the Pull Request timeline
+The new commit will appear in the Pull Request timeline
 
 ![](/img/gitflow-azuredvops/newcommit500.PNG)
 
-If change is good then reviewer can now resolve the comment
+If change is good then the reviewer can now resolve the comment
 
 ![](/img/gitflow-azuredvops/resolvecomment.PNG)
 
-Now Pull Request is ready to approve. Reviewer can click on Approve.
+Now Pull Request is ready to approve. The reviewer can click on Approve.
 
 ![](/img/gitflow-azuredvops/readytoaprove.PNG)
 
@@ -467,7 +467,7 @@ We can also notice the Tasks and User Story being closed automatically
 
 ![](/img/gitflow-azuredvops/taskclosed.PNG)
 
-Finally we can visually see the merge happened in GitKraken
+Finally, we can visually see the merge happened in GitKraken
 
 ![](/img/gitflow-azuredvops/gitmerge.PNG)
 
@@ -478,22 +478,22 @@ To keep things clean it is better to delete it also locally
 
 ## Multiple Features / Conflicts
 
-Now any developers can start there one features without affecting the develop branch
+Now any developers can start there one feature without affecting the develop branch
 
-In the following example we can see 2 features going on `products` and `orders`
+In the following example, we can see 2 features going on `products` and `orders`
 
 Following the previous pull request creation sequence each feature will have its pull request once completed.
 
 ![](/img/gitflow-azuredvops/multiplefeature.PNG)
-We can see that `develop` now is behind and can be tested with previous request being aproved
+We can see that `develop` now is behind and can be tested with the previous request being approved
 
 We will end with pull request for each feature
 
 ![](/img/gitflow-azuredvops/2pulls.PNG)
 
-It can happen that the order of Pull Request being approved and changes trigger conflicts.
+It can happen that the order of Pull Request being approved and changes may trigger conflicts.
 
-For example while working on orders feature (product and many others being already done.)
+For example, while working on orders feature (product and many others were already done.)
 Two developers changed the application variable name.
 
 ![](/img/gitflow-azuredvops/bothchaningapp.PNG)
@@ -504,9 +504,9 @@ Result being Pull Request indicating that there is a conflict
 
 ### Merging and Resolving Conflicts using GitKraken
 
-In order to have pull request completed and conflicts resolved. The developer needs to merge all the `develop` changed into its feature.
+To have pull request completed and conflicts resolved. The developer needs to merge all the `develop` changed into its feature.
 
-In that case we are going to merge `develop` into `feature\order`
+In that case, we are going to merge `develop` into `feature\order`
 
 It can be done by drag and dropping `develop` on the `feature` branch
 
@@ -533,16 +533,16 @@ Once commit is pushed. The Pull Request will be ready to be completed.
 
 ![](/img/gitflow-azuredvops/readytoaproveaftermerge.PNG)
 
-Once completed you can see how dev once merge before feature being merge itself in `develop`
+Once completed you can see how dev once merge before feature being merged itself in `develop`
 
 ![](/img/gitflow-azuredvops/finalresult.PNG)
 
 # Conclusion
 
-In conclusion we did a retrospective on this project and all the team members agreed by saying this workflow really help the project and all its participant. All dev have different level of experiences and different preferences but everyone agreed this was the way to go to work together.
+In conclusion, we did a retrospective on this project and all the team members agreed by saying this workflow really help the project and all its participants. All dev have a different level of experiences and different preferences but everyone agreed this was the way to go to work together.
 
-**GitKraken** really simplify everything when it comes to deal with all the Git concepts without using a console any single time. This is definitely a tool we want to keep in our work and it will be hard to go back on other code source repository like TFS or SVN.
+**GitKraken** really simplifies everything when it comes to deal with all the Git concepts without using a console any single time. This is definitely a tool we want to keep in our work and it will be hard to go back on other code source repositories like TFS or SVN.
 
-Having **Git Flow** and Pull Request policies in place was a bit challenging at first but at the end we were always able to provide nice and smooth feedback on each other code which ended with much more consistent and solid code without enforcing strict coding style policy.
+Having **Git Flow** and Pull Request policies in place was a bit challenging at first but in the end, we were always able to provide nice and smooth feedback on each other code which ended with much more consistent and solid code without enforcing strict coding style policy.
 
-**Azure Devops** is a must have for us now. Everything is very user friendly and the amount of things we can do with this tool is amazing. One of the policy we had for pull request was the application being able to build (.net core api + angular). We didn't had last minute bad surprise we an application not able to build for production and not being able to deploy.
+**Azure Devops** is a must-have for us now. Everything is very user friendly and the amount of things we can do with this tool is amazing. One of the policies we had for pull request was the application being able to build (.net core api + angular). We didn't have last-minute bad surprise we an application not able to build for production and not being able to deploy.
