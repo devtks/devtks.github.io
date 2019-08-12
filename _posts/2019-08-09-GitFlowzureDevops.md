@@ -1,19 +1,19 @@
 ---
 layout: post
 comments: true
-title: Process - Using Git Flow with GitKraken and Azure Devops
+title: Process - Using Git Flow with GitKraken and Azure DevOps
 gh-repo: devtks/devtks.github.io
 gh-badge: [star, fork, follow]
-tags: [git, gitkraken, tuto, process, azure-devops]
+tags: [git, gitkraken, tuto, tutorial, process, azure-devops]
 ---
 
-In 2019 we had the chance to start a new project from scratch for a new customer. We decided to experiment with a new approach in our workflow by trying to resolve recurring issues from other projects and use the maximum potential of a few things. For Example, being a Microsoft Gold Partner shop we are mostly using Microsoft Product for collaboration and project management. (MS Teams, Azure DevOps, etc....).
+In 2019 we had the opportunity to start a project from scratch for a new customer. We decided to experiment with our workflow to try and resolve recurring issues from other projects and use the maximum potential of the tools and products available to us. For Example, as a Microsoft Gold Partner, we are primarily using Microsoft Products for collaboration and project management (i.e. Microsoft Teams, Azure DevOps, Office 365).
 
-One of the biggest changes was the switch from TFS to Git for our code repository plus the fact that we are using Microsoft Azure Devops.
+One of the biggest changes was the switch from TFS to Git for our code repository and Microsoft Azure DevOps for project and task management.
 
-This article will try to summarize our approach using those tools including the git client GitKraken which implements the GitFlow workflow approach. Each concept can be used separately but for us, those tools combined gave us a nice and smooth experience.
+In this article, I will summarize our approach using these tools including the git client GitKraken which implements the GitFlow workflow approach. Each concept can be used separately but for us, those tools combined gave us a nice and smooth experience.
 
-Note: GitKakren is normally a free git client desktop but for this tutorial, we are using the pro version to be able to connect to Azure Devops
+*****Note: GitKraken has a free desktop version but for this tutorial, we are using the pro version which includes Azure DevOps integration.*
 
 - [Challenges and problems we tried to resolve](#challenges-and-problems-we-tried-to-resolve)
   - [Teamwork](#teamwork)
@@ -33,7 +33,7 @@ Note: GitKakren is normally a free git client desktop but for this tutorial, we 
       - [Support For Emergency Fixes](#support-for-emergency-fixes)
 - [Environment Setup](#environment-setup)
   - [Create a new project](#create-a-new-project)
-  - [Connect GitKraken to Azure Devops](#connect-gitkraken-to-azure-devops)
+  - [Connect GitKraken to Azure DevOps](#connect-gitkraken-to-azure-devops)
   - [Clone your Git Repo from GitKraken](#clone-your-git-repo-from-gitkraken)
   - [Initialize Git Flow branches from GitKraken.](#initialize-git-flow-branches-from-gitkraken)
   - [Setting Branch Policies and Pull Request](#setting-branch-policies-and-pull-request)
@@ -54,37 +54,37 @@ Note: GitKakren is normally a free git client desktop but for this tutorial, we 
 
 # Challenges and problems we tried to resolve
 
-This is a short resume of what we tried to achieve and why we think those tools combined helped us a lot in many areas: collaboration, git concept learning curve, code quality, code consistency, and code stability.
+This is a summary of what we tried to achieve and why we think these tools combined have helped us in many areas including collaboration, git concept learning curve, code quality, code consistency, and code stability.
 
 ## Teamwork
 
-Having multiple developers working on the same projects isn't always easy especially when you try to not step on the feet of each other. A new junior coder (or any coder really) on the team can break the project branch with one wrong commit and affect all other members. Which sometimes ends with stressful and complete chaos for a short (sometimes long) period time on the entire team. Unit test can't be done on dev because the feature isn't completed yet. What features being worked on by who.
+Having multiple developers working on the same projects isn't always easy especially when you try to not step on each other's feet. A new coder on the team can break the project branch with one wrong commit and affect all other members. Which sometimes ends with stressful and complete chaos for a short (sometimes long) period time on the entire team. Unit Tests can't be done on dev because the feature isn't completed yet. What features are being worked on and by who.
 
 ### Git Flow to the rescue
 
-With Git Flow branching strategy and some settings on Dev Ops **no commit can be done** directly on the `develop` branch. Each developer always has to create a feature branch and do their work on the feature they are working on. Once a feature is consider done by the developer he has to create a pull request to merge his feature changes to the `develop` branch. His pull request has to be review and approved by another member of the team (Git Flow is explained below)
+With Git Flow branching strategy and some settings on Dev Ops **no commits can be done** directly on the `develop` branch. Each developer is required to create a feature branch off the `develop` branch. All work related to the feature they are working on will be done there. Once a feature is considered done, the developer has to create a pull request to merge their feature into the `develop` branch. Their pull request then has to be reviewed and approved by the project lead, or another member of the team.
 
 Pros we see:
 
 - It forces the project to be split into little features
 - Corrupted commits don't affect other team members
-- Dev can easily relate their feature (pull request ) with bugs, task stories etc
-- Dev branch will receive only approved code (more stable, less potential bugs etc)
+- Dev can easily relate their feature (pull request ) with bugs, tasks, and stories
+- Dev branch will receive only approved code (more stable, less potential bugs)
 
 ## Code Review
 
-As a small company that are dealing with sometimes small and low budget projects, it was always hard to put in place code review. It can be hard to find a tool to review commits correctly or easily provide feedback on the developer's code you are reviewing. Azure DevOps offer a smart and very user-friendly way to remedy that challenge and it was a huge success using this feature during our last project. (see Pull Request section)
+Even as a small company, we struggle to find the right process to perform code reviews. It can be hard to find a tool to review commits correctly or easily provide feedback on the developer's code you are reviewing. Azure DevOps offer a smart and very user-friendly way to remedy that challenge and it was a huge success using this feature during our last project. 
 
 ### Pull Request & Azure DevOps to the rescue
 
-As mentioned in the previous point. Once a feature is considered done the developer has to create a pull request asking his feature to be merged to the `develop` branch. We couple settings on Azure DevOps we can set multiple criteria for a pull request to be approved.
+As mentioned in the previous point. Once a feature is considered done the developer has to create a pull request asking his feature to be merged to the `develop` branch. With a few settings on Azure DevOps, we can set multiple criteria for a pull request to be approved.
 
 - Be approved by one or multiple team members
 - The project has to build with no errors
-- Code commentary has to be all resolved
-- ....
+- All code review comments must be resolved
+- One or more work items must be associated with the pull request
 
-That gave us an incredible way to keep the code consistent, easily explain to your peers what is wrong with their code or approach and at the end lower the number of bugs present in the application.
+This gave us an incredible way to keep the code consistent, easily explain to your peers what is wrong with their code or approach and at the end lower the number of bugs present in the application.
 
 # Definition & Tool
 
@@ -98,11 +98,11 @@ Git is [easy to learn](https://git-scm.com/doc) and has a [tiny footprint with l
 
 ### Why git is called a distributed source control system?
 
-This is very important and probably one of the biggest mindset change we had to do from switching from TFS to Git.
+This is very important and probably one of the biggest mindset changes we had to do from switching from TFS to Git.
 
-Short Definition :
-It is not different with client/server model except a local copy, so why is it called a "distributed" one?
-In the diagram below _alice_ and _david_ can interact because the system is _distributed_.
+A distributed source control system has each user create a copy or *clone* of a repository on their local machine. All commits made by the user are done so only on their local repository and not directly to the origin repository (server). To synchronize changes between a client and origin repository the user performs, pull and push commands. This allows the user to work independently of others. Then pushing their changes and pulling in the most recent changes when they need to. 
+
+In the figure below we have the origin repository while each user has their own repository. With changes being synced back and forth between the origin. 
 
 ![](/img/gitflow-azuredvops/distributed-diagram.PNG)
 
@@ -116,7 +116,7 @@ Azure DevOps formerly known as (VSTS) is a recent continuous integration (CI) an
 
 ## GitKraken
 
-GitKraken is a Git GUI client for Windows, Mac and Linux. It helps developers become more productive and efficient with Git. It's free for non-commercial use. (**Need a Pro license to connect to Azure Devops**)
+GitKraken is a Git GUI client for Windows, Mac, and Linux. It helps developers become more productive and efficient with Git. It's free for non-commercial use. (**Need a Pro license to connect to Azure Devops**)
 
 GitKraken simplifies complicated commands into drag and drop actions. It makes working with remote repositories easier through integrations with GitHub, Bitbucket and GitLab. It allows you to resolve merge conflicts without ever leaving the app. And it supports Gitflow, Git Hooks, LFS, and more. [source](https://www.producthunt.com/posts/gitkraken-4)
 
@@ -167,11 +167,11 @@ Welcome to your newly created project.
 
 ![](/img/gitflow-azuredvops/Newly-Created.PNG)
 
-## Connect GitKraken to Azure Devops
+## Connect GitKraken to Azure DevOps
 
-First thing is to connect GitKraken to your Azure Devops. For that, you are going to need to create a Token
+First thing is to connect GitKraken to your Azure DevOps. For that, you are going to need to create a Token
 
-When opening GitKraken you should see Azure Devops option available (_Pro Version_)
+When opening GitKraken you should see Azure DevOps option available (_Pro Version_)
 
 ![](/img/gitflow-azuredvops/open-gitkraken.png)
 
