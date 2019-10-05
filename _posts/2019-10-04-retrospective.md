@@ -8,7 +8,7 @@ tags: [tuto, tutorial, process, azure-devops]
 ---
 
 Project Retrospective. you know the thing we rarely do and we do it gets quickly lost in the nature within a Word Doc or other type of one time used never read again type of doc. 
-Because we are trying to use the full potential of Azure Devops here and TKS by using features like Boards, Pipeline and so on we thought it would be nice to have retrospective that sit within the project artifacts and be accessible by anyone at any time.
+Because we are trying to use the full potential of Azure Devops here at TKS by using features like Boards, Pipeline and so on we thought it would be nice to have retrospective that sit within the project artifacts and be accessible by anyone at any time.
 
 This guide will help you to use a plugin available in Azure Devops that will allow you to gather feedback from your team, your clients. Vote, plan and create actionable items.
 
