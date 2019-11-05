@@ -29,7 +29,7 @@ Navigating the code of an application gets increasingly more complex as it grows
 
 The basis of the folder structure starts from the built in `dotnet new angular` template.
 
-![1572793909635](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\1572793909635.png)
+![image-20191104225401262](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\image-20191104225401262.png)
 
 In the project directory there are only 4 areas where you will spend the most time:
 
@@ -42,7 +42,7 @@ In the project directory there are only 4 areas where you will spend the most ti
 
 We split our API Controllers by feature or specific areas with each new feature following the same pattern. The DTO's or Models are always in the same area as the controller it's related to. This keeps the items organized by area rather than a single folder with all controllers and a single folder with all models.
 
-![1572802621684](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\1572802621684.png)
+<img src="C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\1572802621684.png" alt="1572802621684" style="zoom:50%;" />
 
 As you can see above our folder structure follows the format:
 
@@ -58,13 +58,13 @@ As you can see above our folder structure follows the format:
 
 The **ClientApp** folder is going to contain the bulk of your application code, which makes it important to keep it as clean as possible. We have setup a structure that covers splitting by feature but also common shared functionality.
 
-![1572804449388](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\1572804449388.png)
+<img src="C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\1572804449388.png" alt="1572804449388" style="zoom:50%;" />
 
 Starting from the top, we have the **app** folder which contains all application code, **assets** which contain styles, images and all other static resources, **environments** for configuration specific settings, and **theme** for overriding the default bootstrap styles.
 
 **The app folder**
 
-**Components** and **Sub Components** are located directly in the **app** folder. It is important to group related components and features together. For example, if your application requires the ability to manage user accounts. You may need a screen to search and a screen to create and edit. The edit screen may have a details section and a roles and permissions section. Your component hierarchy may look something like:
+**Components** and **Sub Components** are located directly in the **app** folder. It is important to group related components and features together. For example, if your application requires the ability to manage user accounts. You may need a screen to search and a screen to create and edit. The edit screen may have a details section and a roles and permissions section. So your component hierarchy may look something like:
 
 ```
 /app/users/{user.component}
@@ -74,7 +74,15 @@ Starting from the top, we have the **app** folder which contains all application
 /app/users/user/permissions/{permission.component}
 ```
 
-In some cases a **component** is not directly related to an overall page or feature and is re-used in multiple areas of the application. For this we have a **shared** folder
+In some cases a **component** is not directly related to an overall page or feature and is re-used in multiple areas of the application. For this we have a **shared** folder.
+
+![image-20191104225319566](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\image-20191104225319566.png)
+
+The **shared** folder contains a single **module**** which is used to declare common **components**, **directives**, and **pipes**. Each module in the application can then import the **shared module**. If a component is expected to be used outside of it's current module for any reason, it should be declared inside the **shared module** instead.
+
+**Services**, **Endpoints** and **Models**
+
+![image-20191104230106155](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\image-20191104230106155.png)
 
 
 
