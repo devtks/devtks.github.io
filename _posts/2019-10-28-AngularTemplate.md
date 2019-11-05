@@ -62,11 +62,19 @@ The **ClientApp** folder is going to contain the bulk of your application code, 
 
 Starting from the top, we have the **app** folder which contains all application code, **assets** which contain styles, images and all other static resources, **environments** for configuration specific settings, and **theme** for overriding the default bootstrap styles.
 
-![1572804625845](C:\Users\taylo\AppData\Roaming\Typora\typora-user-images\1572804625845.png)
+**The app folder**
 
-The **app** folder will contain all the top level **feature** folders, **shared** resources, and **services**.
+**Components** and **Sub Components** are located directly in the **app** folder. It is important to group related components and features together. For example, if your application requires the ability to manage user accounts. You may need a screen to search and a screen to create and edit. The edit screen may have a details section and a roles and permissions section. Your component hierarchy may look something like:
 
-**Endpoints**
+```
+/app/users/{user.component}
+/app/users/search/{search.component}
+/app/users/user/{user.component}
+/app/users/user/details/{details.component}
+/app/users/user/permissions/{permission.component}
+```
+
+In some cases a **component** is not directly related to an overall page or feature and is re-used in multiple areas of the application. For this we have a **shared** folder
 
 
 
