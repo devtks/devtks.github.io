@@ -6,16 +6,27 @@ That's why we decided to create a project template. For us, we focus mainly on w
 
 # 1. It's starts your projects off clean and consistent
 
-As more projects are started or new people are added to the team, code consistency becomes increasingly more difficult to maintain. It is like a sink of dirty dishes, the longer you leave it, the bigger the mess gets. To keep the project clean from the beginning you need to start with a strong foundation. 
+As more projects are started or new people are added to the team, code consistency becomes increasingly more difficult to maintain. It is like a sink of dirty dishes, the longer you leave it, the bigger the mess becomes. To keep the project clean from the beginning you need to start with a strong foundation. 
 
-With the template we have implemented formatters and linters to enforce coding standards and to keep the code in a consistent format. 
+In the template we have taken steps to ensure new and existing developers follow the same coding standards. We have implemented Linters that will warn the developer that their code does not match the standards and added extensions for auto code formatting to keep the code in a consistent format. This prevents the needless change of code from one developers preference to another. Finally the debate of the semi-colon on the same line or new line can end. You decide on a preference and the formatter does the rest. Adding Linters and formatters to projects is not something new and is recommended in all new projects. However, having the configuration and rules included with the template ensure that all new projects follow the same rules.
 
-1. Problem (Code consistency)
-2. Solution (How it solves the problem)
-3. Features (Features of the template)
-4. Summary (Summarize the problem it solves)
+With a strong foundation in place you can rest easy knowing that as the projects continue to grow you should always know what to expect. No matter which developer is doing the work, the code remains in a consistent format. Making it easier to read, saving you time and frustration.
 
 # 2. It boosts your project start time and reduces costs
+
+The initial part of the project is a very small portion of the overall life of a project. As time goes on adding features and fixing bugs become routine as you've already done in numerous times. 
+
+Over the long duration of a project the initial setup seems like a small amount of time in comparison. But the beginning of the project is also one of the most critical times. How you start the project can greatly dictate how the project moves forward. 
+
+This first couple of months into a project are the most critical, they are also the time when you can mess things up the most. 
+
+After months or years into a project, remembering back to the first couple weeks starting the foundation of the project seems a small amount of time in comparison. However this time can also be the most critical 
+
+Most developers (myself included) have the habit of under estimating the development time to complete a task. 
+
+
+
+Estimation is one of the most difficult tasks as a developer. On the surface creating a simple login form seems simple. A couple fields 
 
 1. Problem (Time spent doing the same tasks again and again)
 2. Solution (Most of the start up time is done, it's familiar)
