@@ -18,7 +18,7 @@ The initial part of the project is a very small portion of the overall life of a
 
 Over the long duration of a project the initial setup seems like a small amount of time in comparison. But the beginning of the project is also one of the most critical times. How you start the project can greatly dictate how the project moves forward. 
 
-This first couple of months into a project are the most critical, they are also the time when you can mess things up the most. 
+This first couple of months into a project are the most critical, they are also the time when you can mess things up the most. You are spending time setting up a foundation. Defining folder structure, setting up authentication, adding authorization, localization, data base connections, creating a database , data access tools 
 
 After months or years into a project, remembering back to the first couple weeks starting the foundation of the project seems a small amount of time in comparison. However this time can also be the most critical 
 
